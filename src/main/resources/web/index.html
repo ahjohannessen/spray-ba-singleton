@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="admin">
+<head>
+    <title>User Creds</title>
+    <!-- Import Jquery & Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!--Import Angular JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.min.js"></script>
+
+    <!--Add my AngularJS modules, config and controllers-->
+    <script src="js/ng-config.js"></script>
+    <script src="js/ng-control.js"></script>
+
+    <!--Stylesheet referenes-->
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="stylesheet" href="css/color.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-default" role="navigation" ng-controller="MenuCtl">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#adminMenu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-xs" href="/web/index.html#">User Creds</a>
+            <a class="navbar-brand hidden-md hidden-sm hidden-lg" href="/web/index.html#" data-toggle="collapse"
+               data-target="#adminMenu">User Creds</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="adminMenu">
+            <!-- Without collapse-->
+            <ul class="nav navbar-nav hidden-xs">
+                <li ng-class="{active: isActive('/creds')}">
+                    <a href="/web/index.html#/creds">User Creds</a>
+                </li>
+            </ul>
+
+            <!-- With collapse -->
+            <ul class="nav navbar-nav hidden-md hidden-lg hidden-sm" data-toggle="collapse" data-target="#adminMenu">
+                <li ng-class="{active: isActive('/creds')}"><a href="/web/index.html#/creds">User Credentials</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="container-fluid" ng-view></div>
+</body>
+</html>

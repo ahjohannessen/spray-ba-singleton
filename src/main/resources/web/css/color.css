@@ -1,0 +1,62 @@
+/****************************************************************
+********************  Font/glyphicon colors  ********************
+****************************************************************/
+
+.blue
+{
+    color:blue;
+}
+
+.green
+{
+    color:green;
+}
+
+.red
+{
+    color:red;
+}
+
+.orange
+{
+    color:orange;
+}
+
+.lightblue
+{
+    color: #39b3d7;
+}
+
+.light-gray
+{
+    color: #bcbcbc;
+}
+
+/****************************************************************
+********************  Background colors  ************************
+****************************************************************/
+
+.bg-red
+{
+    background-color: red;
+}
+
+.bg-green
+{
+    background-color: green;
+}
+
+.bg-blue
+{
+    background-color: blue;
+}
+
+.bg-orange
+{
+    background-color: orange;
+}
+
+.bg-lightblue
+{
+    background-color: #39b3d7;
+}
